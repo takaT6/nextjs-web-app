@@ -1,5 +1,6 @@
 import { AppContext } from "@/pages/_app";
 import { useContext } from "react";
+import { MenuIcon } from "../Icons";
 
 const SidebarBtn = () => {
     const { isOpen, setIsOpen } = useContext(AppContext);
@@ -9,7 +10,10 @@ const SidebarBtn = () => {
     };
 
     return (
-        <div className="absolute inset-y-0 top-0 z-50" onClick={handleClick}>{isOpen ? "✖" : "🍔"}</div>
+        <div className="absolute inset-y-0 top-0 z-50"
+            onClick={handleClick}>
+            {isOpen ? "✖" : <MenuIcon />}
+        </div>
     );
 };
 

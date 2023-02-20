@@ -1,5 +1,5 @@
-import { AppContext } from "@/pages/_app"
-import { useContext } from "react"
+import { AppContext } from "@/pages/_app";
+import { useContext } from "react";
 
 const Overlay = () => {
   const { isOpen, setIsOpen } = useContext(AppContext);
@@ -10,7 +10,7 @@ const Overlay = () => {
         : 'pointer-events-none opacity-0'
         }`}
       onClick={() => setIsOpen(false)} />
-  )
-}
+  );
+};
 
-export default Overlay
+export default Overlay;

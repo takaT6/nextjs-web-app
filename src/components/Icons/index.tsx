@@ -28,6 +28,20 @@ const CancelIcon = () => {
     );
 };
 
+const SettingsIcon = () => {
+    return (
+        <span>
+            <Image
+                src="/settings.svg"
+                alt="home"
+                width={20}
+                height={20}
+                priority
+            />
+        </span>
+    );
+};
+
 const HomeIcon = () => {
     return (
         <span>
@@ -42,4 +56,4 @@ const HomeIcon = () => {
     );
 };
 
-export { MenuIcon, CancelIcon, HomeIcon };
+export { MenuIcon, CancelIcon, SettingsIcon, HomeIcon };

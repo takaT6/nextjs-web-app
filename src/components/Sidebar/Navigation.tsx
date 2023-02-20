@@ -28,7 +28,7 @@ const Navigation = () => {
       label: <span>ページ3</span>,
       href: "/page3",
       icon: <HomeIcon />,
-      isActive: false,
+      isActive: router.asPath === "/page3",
     },
     {
       label: <span>ページ4</span>,

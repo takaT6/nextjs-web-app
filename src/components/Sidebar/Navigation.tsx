@@ -30,6 +30,7 @@ const navigations: NavigationItem[] = [
     isActive: false,
   },
 ];
+
 const Navigation = () => {
   const { isOpen, setIsOpen } = useContext(AppContext);
 

@@ -19,7 +19,7 @@ const Card = (props: Spot) => {
   return (
     <>
       <div className="w-1/2 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div className="relative w-auto">
+        <div className="w-auto">
           <Image className="rounded-t-lg" src="/download.jpg" alt=""
             width={1980}
             height={1150}

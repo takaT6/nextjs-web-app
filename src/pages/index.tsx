@@ -1,5 +1,5 @@
-import FirebaseList from '@/components/FirebaseList'
-import Head from 'next/head'
+import FirebaseList from '@/components/FirebaseList';
+import Head from 'next/head';
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       This is main page
       <FirebaseList />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

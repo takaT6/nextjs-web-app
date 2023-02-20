@@ -1,13 +1,13 @@
 import { AppContext } from "@/pages/_app";
 import Link from "next/link";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 type NavigationItem = {
   label: string,
   href: string,
   icon: JSX.Element,
-  isActive: boolean
-}
+  isActive: boolean;
+};
 
 const navigations: NavigationItem[] = [
   {
@@ -34,7 +34,7 @@ const navigations: NavigationItem[] = [
     icon: <span>★</span>,
     isActive: false,
   },
-]
+];
 const Navigation = () => {
   const { isOpen, setIsOpen } = useContext(AppContext);
 
@@ -53,7 +53,7 @@ const Navigation = () => {
         ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

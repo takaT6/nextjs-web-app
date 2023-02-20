@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { db } from '../../pages/api/firebase';
 import Card from "./Card";
 
-
 type Spot = {
   name: string,
   state: string,

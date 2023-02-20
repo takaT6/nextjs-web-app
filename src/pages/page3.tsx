@@ -1,3 +1,4 @@
+import Filtering from '@/components/Filtering';
 import Head from 'next/head';
 
 const Page3 = () => {
@@ -10,9 +11,7 @@ const Page3 = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {array.map((_, i) => (
-                <div key={i}>This is page3</div>
-            ))}
+            <Filtering />
         </>
     );
 };

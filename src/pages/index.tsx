@@ -1,3 +1,4 @@
+import FirebaseList from '@/components/FirebaseList'
 import Head from 'next/head'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       This is main page
+      <FirebaseList />
     </>
   )
 }

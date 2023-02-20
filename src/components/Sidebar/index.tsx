@@ -1,6 +1,5 @@
 import { AppContext } from "@/pages/_app";
 import { useContext, useEffect } from "react";
-import SidebarBtn from "./SidebarBtn";
 import Navigation from "./Navigation";
 import Overlay from "./Overlay";
 import SidebarHeader from "./SidebarHeader";
@@ -16,9 +15,8 @@ const Sidebar = () => {
   useEffect(() => stopScroll(isOpen), [isOpen]);
   return (
     <>
-      <SidebarBtn />
       <div className={
-        `${isOpen ? "left-0 translate-x-0"
+        `${isOpen ? "left-0 translate-x-0 shadow-lg"
           : "-translate-x-full"} 
         absolute z-40 w-6/12 inset-y-0 max-h-screen min-h-screen overflow-y-auto 
         bg-white transition duration-200 ease-in-out`

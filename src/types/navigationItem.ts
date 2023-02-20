@@ -1,5 +1,5 @@
 export type NavigationItem = {
-    label: string,
+    label: JSX.Element,
     href: string,
     icon: JSX.Element,
     isActive: boolean,

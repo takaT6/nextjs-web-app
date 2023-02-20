@@ -1,6 +1,6 @@
 import { AppContext } from "@/pages/_app";
 import { useContext } from "react";
-import { MenuIcon } from "../Icons";
+import { CancelIcon, MenuIcon } from "../Icons";
 
 const SidebarBtn = () => {
     const { isOpen, setIsOpen } = useContext(AppContext);
@@ -10,9 +10,9 @@ const SidebarBtn = () => {
     };
 
     return (
-        <div className="absolute inset-y-0 top-0 z-50"
+        <div className="flex m-2  z-50"
             onClick={handleClick}>
-            {isOpen ? "✖" : <MenuIcon />}
+            {isOpen ? <CancelIcon /> : <MenuIcon />}
         </div>
     );
 };

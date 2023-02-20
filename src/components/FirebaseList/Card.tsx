@@ -1,19 +1,5 @@
+import { Spot } from "@/types/Spot";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { db } from '../../pages/api/firebase';
-type Spot = {
-  name: string,
-  state: string,
-  city: string,
-  address1: string,
-  address2: string,
-  star: number,
-  udate: {
-    nanoseconds: number,
-    seconds: number,
-  },
-  udate2: string,
-};
 
 const Card = (props: Spot) => {
   return (

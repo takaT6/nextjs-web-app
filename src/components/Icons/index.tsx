@@ -14,6 +14,20 @@ const MenuIcon = () => {
     );
 };
 
+const CancelIcon = () => {
+    return (
+        <span>
+            <Image
+                src="/x.svg"
+                alt="home"
+                width={20}
+                height={20}
+                priority
+            />
+        </span>
+    );
+};
+
 const HomeIcon = () => {
     return (
         <span>
@@ -28,4 +42,4 @@ const HomeIcon = () => {
     );
 };
 
-export { MenuIcon, HomeIcon };
+export { MenuIcon, CancelIcon, HomeIcon };

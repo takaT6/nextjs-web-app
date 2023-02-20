@@ -1,18 +1,15 @@
+import stopScroll from "@/libs/stopScroll";
 import { AppContext } from "@/pages/_app";
 import { useContext, useEffect } from "react";
 import Navigation from "./Navigation";
 import Overlay from "./Overlay";
 import SidebarHeader from "./SidebarHeader";
 
-const stopScroll = (on: boolean) => {
-  if (on) document.body.style.overflow = "hidden";
-  else document.body.style.overflow = "auto";
-};
-
 const Sidebar = () => {
-  const { isOpen, setIsOpen } = useContext(AppContext);
+  const { isOpen } = useContext(AppContext);
 
   useEffect(() => stopScroll(isOpen), [isOpen]);
+
   return (
     <>
       <div className={

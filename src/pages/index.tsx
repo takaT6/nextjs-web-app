@@ -1,7 +1,12 @@
 import FirebaseList from '@/components/FirebaseList';
+import { getCurrentPosition } from '@/libs/getCurrentPosition';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 const Home = () => {
+  useEffect(() => {
+    getCurrentPosition();
+  }, []);
   return (
     <>
       <Head>

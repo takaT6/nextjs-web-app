@@ -10,4 +10,5 @@ export type Spot = {
         seconds: number,
     },
     udate2: string,
+    // type: string,
 };

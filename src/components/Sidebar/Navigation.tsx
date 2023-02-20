@@ -1,5 +1,5 @@
 import { AppContext } from "@/pages/_app";
-import NavigationItem from "@/types/NavigationItem";
+import { NavigationItem } from "@/types/NavigationItem";
 import Link from "next/link";
 import { useContext } from "react";
 import { HomeIcon } from "../Icons";

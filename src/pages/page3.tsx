@@ -2,7 +2,6 @@ import Filtering from '@/components/Filtering';
 import Head from 'next/head';
 
 const Page3 = () => {
-    const array = new Array(100).fill(10);
     return (
         <>
             <Head>

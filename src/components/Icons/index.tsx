@@ -56,4 +56,32 @@ const HomeIcon = () => {
     );
 };
 
-export { MenuIcon, CancelIcon, SettingsIcon, HomeIcon };
+const SearchIcon = () => {
+    return (
+        <span>
+            <Image
+                src="/search.svg"
+                alt="home"
+                width={20}
+                height={20}
+                priority
+            />
+        </span>
+    );
+};
+
+const ChevronDownIcon = () => {
+    return (
+        <span>
+            <Image
+                src="/chevron-down.svg"
+                alt="home"
+                width={20}
+                height={20}
+                priority
+            />
+        </span>
+    );
+};
+
+export { MenuIcon, CancelIcon, SettingsIcon, HomeIcon, SearchIcon, ChevronDownIcon };

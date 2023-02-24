@@ -1,87 +1,35 @@
-import Image from "next/image";
+import Search from "public/search.svg";
+import Menu from "public/menu.svg";
+import Settings from "public/settings.svg";
+import Cancel from "public/cancel.svg";
+import Home from "public/home.svg";
+import ChevronDown from "public/chevron-down.svg";
 
-const MenuIcon = () => {
+const icons = { Search, Menu, Settings, Cancel, Home, ChevronDown };
+
+type Name = keyof typeof icons;
+
+export type IconProps = {
+    name: Name,
+    className?: string,
+    fill?: string,
+    stroke?: string,
+    width?: number,
+    height?: number,
+};
+
+const Icon = ({ name, className, fill = "none", stroke = "currentColor", width = 20, height = 20 }: IconProps) => {
+    const SvgComponent = icons[name];
+    console.log(className);
     return (
-        <span>
-            <Image
-                src="/menu.svg"
-                alt="home"
-                width={20}
-                height={20}
-                priority
-            />
-        </span>
+        <SvgComponent
+            className={className}
+            fill={fill}
+            stroke={stroke}
+            width={width}
+            height={height}
+        />
     );
 };
 
-const CancelIcon = () => {
-    return (
-        <span>
-            <Image
-                src="/x.svg"
-                alt="home"
-                width={20}
-                height={20}
-                priority
-            />
-        </span>
-    );
-};
-
-const SettingsIcon = () => {
-    return (
-        <span>
-            <Image
-                src="/settings.svg"
-                alt="home"
-                width={20}
-                height={20}
-                priority
-            />
-        </span>
-    );
-};
-
-const HomeIcon = () => {
-    return (
-        <span>
-            <Image
-                src="/home.svg"
-                alt="home"
-                width={20}
-                height={20}
-                priority
-            />
-        </span>
-    );
-};
-
-const SearchIcon = () => {
-    return (
-        <span>
-            <Image
-                src="/search.svg"
-                alt="home"
-                width={20}
-                height={20}
-                priority
-            />
-        </span>
-    );
-};
-
-const ChevronDownIcon = () => {
-    return (
-        <span>
-            <Image
-                src="/chevron-down.svg"
-                alt="home"
-                width={20}
-                height={20}
-                priority
-            />
-        </span>
-    );
-};
-
-export { MenuIcon, CancelIcon, SettingsIcon, HomeIcon, SearchIcon, ChevronDownIcon };
+export { Icon };

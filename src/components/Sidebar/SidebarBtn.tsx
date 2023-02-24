@@ -1,6 +1,6 @@
 import { AppContext } from "@/pages/_app";
 import { useContext } from "react";
-import { CancelIcon, MenuIcon } from "../Icons";
+import { Icon } from "../Icons";
 
 const SidebarBtn = () => {
     const { isOpen, setIsOpen } = useContext(AppContext);
@@ -10,8 +10,8 @@ const SidebarBtn = () => {
     };
 
     return (
-        <div className="flex m-2  z-50" onClick={handleClick}>
-            {isOpen ? <CancelIcon /> : <MenuIcon />}
+        <div className="flex z-50 m-2" onClick={handleClick}>
+            {isOpen ? <Icon name="Cancel" /> : <Icon name="Menu" />}
         </div>
     );
 };

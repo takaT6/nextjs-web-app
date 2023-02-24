@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Settings from "../Settings";
+import { Icon } from "../Icons";
 import Sidebar from "../Sidebar";
 import SidebarBtn from "../Sidebar/SidebarBtn";
 
@@ -11,7 +11,7 @@ const Header = () => {
         <span className="p-2">
           <Link href="/">This is header.</Link>
         </span>
-        <Settings />
+        <Icon name="Settings" className="m-2" />
       </div>
       <Sidebar />
     </header>

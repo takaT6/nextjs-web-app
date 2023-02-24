@@ -3,7 +3,7 @@ import { NavigationItem } from "@/types/NavigationItem";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext } from "react";
-import { HomeIcon } from "../Icons";
+import { Icon } from "../Icons";
 
 
 const Navigation = () => {
@@ -15,25 +15,25 @@ const Navigation = () => {
     {
       label: <span>トップ</span>,
       href: "/",
-      icon: <HomeIcon />,
+      icon: <Icon name="Home" />,
       isActive: router.asPath === "/",
     },
     {
       label: <span>ページ2</span>,
       href: "/page2",
-      icon: <HomeIcon />,
+      icon: <Icon name="Home" />,
       isActive: router.asPath === "/page2",
     },
     {
       label: <span>ページ3</span>,
       href: "/page3",
-      icon: <HomeIcon />,
+      icon: <Icon name="Home" />,
       isActive: router.asPath === "/page3",
     },
     {
       label: <span>ページ4</span>,
       href: "/page4",
-      icon: <HomeIcon />,
+      icon: <Icon name="Home" />,
       isActive: false,
     },
   ];

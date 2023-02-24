@@ -20,7 +20,7 @@ export type IconProps = {
 
 const Icon = ({ name, className, fill = "none", stroke = "currentColor", width = 20, height = 20 }: IconProps) => {
     const SvgComponent = icons[name];
-    console.log(className);
+    console.log(name);
     return (
         <SvgComponent
             className={className}

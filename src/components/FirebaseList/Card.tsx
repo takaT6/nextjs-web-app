@@ -1,6 +1,11 @@
 import { Spot } from "@/types/Spot";
 import Image from "next/image";
-
+const makeDate = (sec: string | number): string => {
+  const udate = new Date(Number(sec) * 1000);
+  console.log(udate);
+  const jpDate = `${udate.getFullYear()}年${udate.getMonth() + 1}月${udate.getDate()}日`;
+  return jpDate;
+};
 const Card = (props: Spot) => {
   return (
     <>
@@ -22,10 +27,10 @@ const Card = (props: Spot) => {
             </h5>
           </a>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            {props.city + props.address1 + props.address2}
+            {props.address1 + props.address2 + props.address3}
           </p>
           <p className="mb-2 text-xs font-normal text-gray-700 dark:text-gray-400">
-            {props.udate2}
+            {makeDate(props.updated_at.seconds)}
           </p>
           <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             場所を確認する→

@@ -10,7 +10,7 @@ const SidebarBtn = () => {
     };
 
     return (
-        <div className="flex z-50 m-2" onClick={handleClick}>
+        <div className="flex z-50 p-2" onClick={handleClick}>
             {isOpen ? <Icon name="Cancel" /> : <Icon name="Menu" />}
         </div>
     );

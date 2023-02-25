@@ -1,0 +1,6 @@
+id,name,area,postal_code,address1,address2,address3,latitude,longitude,parking_info,business_hours,regular_holiday,website_url,photo,rating,review,description,recommended_point,created_at,updated_at
+1,ZERO-BASE,京都,601-0734,京都府,南丹市,美山町長尾 下庵1-1,35.27532061689635,135.58989656159764,1,9:00~18:00,不定休", 冬季（１・２月）休業,http://zero-b.com,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,道の駅 美山ふれあい広場,京都,601-0722,京都府,南丹市,美山町安掛下23−1,35.276683869217486,135.58804321289062,1,NULL,NULL,https://miyamanavi.com/sightseeing/fureaihiroba,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3,渡月橋,京都,616-8384,京都府,京都市右京区,嵯峨天龍寺芒ノ馬場町1-5,35.01301747487064,135.67787170410156,2,NULL,NULL,https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2682,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+4,天橋立,京都,626-0001,京都府,宮津市,文珠,35.5706050721647,135.19139099121094,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+5,道の駅 妹子の郷,滋賀,520-0526,滋賀県,大津市,和邇中５２８,35.15978929438136,135.90135302166698,NULL,9時00分～18時00分,NULL,http://www.imokonosato.com/,NULL,NULL,NULL,NULL,NULL,NULL,NULL

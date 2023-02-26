@@ -15,7 +15,6 @@ const Header = () => {
       </div>
       <Sidebar />
     </header>
-
   );
 };
 

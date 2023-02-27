@@ -16,7 +16,7 @@ const Card = (props: Spot) => {
             }} />
         </div>
         <div className="space-y-1">
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
             {props.name}
           </h5>
           <p className="text-xs font-normal text-gray-700 dark:text-gray-400">

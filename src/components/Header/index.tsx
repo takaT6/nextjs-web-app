@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Icon } from "../Icons";
-import Sidebar from "../Sidebar";
-import SidebarBtn from "../Sidebar/SidebarBtn";
+import { Icon } from "@/components/Icons";
+import SidebarBtn from "@/components/Sidebar/SidebarBtn";
+import Sidebar from "@/components/Sidebar";
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { db } from '../../pages/api/firebase';
-import Card from "./Card";
+import { db } from '@/pages/api/firebase';
+import Card from "@/components/FirebaseList/Card";
 import { collection, query, onSnapshot } from "firebase/firestore";
 import { Spot } from "@/types/Spot";
 import { setData } from "@/libs/pushDataToFS";

@@ -1,9 +1,9 @@
+import SidebarHeader from "@/components/Sidebar/SidebarHeader";
+import Navigation from "@/components/Sidebar/Navigation";
+import Overlay from "@/components/Sidebar/Overlay";
 import stopScroll from "@/libs/stopScroll";
 import { AppContext } from "@/pages/_app";
 import { useContext, useEffect } from "react";
-import Navigation from "./Navigation";
-import Overlay from "./Overlay";
-import SidebarHeader from "./SidebarHeader";
 
 const Sidebar = () => {
   const { isOpen } = useContext(AppContext);

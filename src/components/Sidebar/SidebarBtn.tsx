@@ -1,6 +1,6 @@
+import { Icon } from "@/components/Icons";
 import { AppContext } from "@/pages/_app";
 import { useContext } from "react";
-import { Icon } from "../Icons";
 
 const SidebarBtn = () => {
     const { isOpen, setIsOpen } = useContext(AppContext);

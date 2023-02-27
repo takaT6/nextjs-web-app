@@ -1,9 +1,9 @@
+import { Icon } from "@/components/Icons";
 import { AppContext } from "@/pages/_app";
 import { NavigationItem } from "@/types/NavigationItem";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext } from "react";
-import { Icon } from "../Icons";
 
 
 const Navigation = () => {

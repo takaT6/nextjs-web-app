@@ -1,5 +1,5 @@
 
-import { db } from '../pages/api/firebase';
+import { db } from "@/pages/api/firebase";
 import { setDoc, doc, serverTimestamp, GeoPoint } from "firebase/firestore";
 const data_array = Array();
 export const setData = () => {

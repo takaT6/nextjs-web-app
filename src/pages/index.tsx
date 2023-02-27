@@ -1,5 +1,5 @@
 import FirebaseList from '@/components/FirebaseList';
-import { getCurrentPosition } from '@/libs/getCurrentPosition';
+import { getCurrentPosition } from '@/libs/GeolocationUtil';
 import Head from 'next/head';
 import { useEffect } from 'react';
 

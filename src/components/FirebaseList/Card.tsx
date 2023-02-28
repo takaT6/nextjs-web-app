@@ -28,17 +28,17 @@ const Card = (props: Spot) => {
               詳細
             </summary>
             <div className="leading-6 text-slate-600 dark:text-slate-400">
-              <table className="table-fixed w-full">
-                <tr className="mb-2 text-xs font-normal text-gray-700 dark:text-gray-400">
-                  <td className="w-auto">住所：</td>
+              <table className="text-xs table-fixed w-full">
+                <tr className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <td className="w-1/3">住所</td>
                   <td>{props.address1 + props.address2 + props.address3}</td>
                 </tr>
-                <tr className="mb-2 text-xs font-normal text-gray-700 dark:text-gray-400">
-                  <td>駐車場：</td>
+                <tr className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <td>駐車場</td>
                   <td>{props.parking_info == 2 ? "周辺にあり" : props.parking_info == 1 ? "あり" : "不明"}</td>
                 </tr>
-                <tr className="mb-2 text-xs font-normal text-gray-700 dark:text-gray-400">
-                  <td>更新日：</td>
+                <tr className="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                  <td>更新日</td>
                   <td>{props.created_at.formatted}</td>
                 </tr>
               </table>
